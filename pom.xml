@@ -17,6 +17,13 @@
 
 	<name>plugins/Scala_Interpreter.jar</name>
 
+	<scm>
+		<connection>scm:git:git://github.com/fiji/Scala_Interpreter</connection>
+		<developerConnection>scm:git:git@github.com:fiji/Scala_Interpreter</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/fiji/Scala_Interpreter</url>
+	</scm>
+
 	<repositories>
 		<!--> repos: ImageJ repositories + scala tools <-->
 		<repository>
