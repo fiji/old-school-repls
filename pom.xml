@@ -17,6 +17,11 @@
 
 	<name>plugins/Scala_Interpreter.jar</name>
 
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/job/Scala_Interpreter/</url>
+	</ciManagement>
+
 	<scm>
 		<connection>scm:git:git://github.com/fiji/Scala_Interpreter</connection>
 		<developerConnection>scm:git:git@github.com:fiji/Scala_Interpreter</developerConnection>
