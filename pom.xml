@@ -21,12 +21,10 @@
 		<dependency>
 			<groupId>org.clojure</groupId>
 			<artifactId>clojure</artifactId>
-			<version>${clojure.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>fiji-scripting</artifactId>
-			<version>${fiji-scripting.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>net.imagej</groupId>
