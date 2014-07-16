@@ -21,12 +21,10 @@
 		<dependency>
 			<groupId>org.beanshell</groupId>
 			<artifactId>bsh</artifactId>
-			<version>${beanshell.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>fiji-compat</artifactId>
-			<version>${fiji-compat.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>net.imagej</groupId>
@@ -35,12 +33,10 @@
 		<dependency>
 			<groupId>rhino</groupId>
 			<artifactId>js</artifactId>
-			<version>${js.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.python</groupId>
 			<artifactId>jython</artifactId>
-			<version>${jython.version}</version>
 		</dependency>
 	</dependencies>
 
