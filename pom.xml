@@ -21,7 +21,6 @@
 		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>fiji-scripting</artifactId>
-			<version>${fiji-scripting.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>net.imagej</groupId>
@@ -30,7 +29,6 @@
 		<dependency>
 			<groupId>org.python</groupId>
 			<artifactId>jython</artifactId>
-			<version>${jython.version}</version>
 		</dependency>
 	</dependencies>
 
