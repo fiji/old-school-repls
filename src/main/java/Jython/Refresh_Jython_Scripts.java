@@ -17,17 +17,19 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 You may contact Albert Cardona at albert at pensament dot net, at http://www.pensament.net/java/
 */
+import common.RefreshScripts;
+
 import ij.IJ;
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+
 import org.python.core.PyDictionary;
 import org.python.core.PyException;
 import org.python.core.PySystemState;
 import org.python.util.PythonInterpreter;
-import common.RefreshScripts;
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 
 /**
  * 	1 - looks for python script files under the ImageJ/plugins/jython folder

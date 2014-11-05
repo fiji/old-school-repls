@@ -16,24 +16,23 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 You may contact Albert Cardona at albert at pensament net, at http://www.pensament.net/java/
 */
+import common.AbstractInterpreter;
+
 import ij.IJ;
-import ij.gui.GenericDialog;
+
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
-import org.python.util.PythonInterpreter;
+import java.util.Collections;
+
+import org.python.core.CompileMode;
+import org.python.core.CompilerFlags;
 import org.python.core.ParserFacade;
 import org.python.core.Py;
-import org.python.core.CompilerFlags;
-import org.python.core.PyObject;
 import org.python.core.PyDictionary;
+import org.python.core.PyObject;
 import org.python.core.PySystemState;
-import org.python.core.CompileMode;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowAdapter;
-
-import java.util.Collections;
-import java.util.Map;
-
-import common.AbstractInterpreter;
+import org.python.util.PythonInterpreter;
 
 /** A dynamic Jython interpreter for ImageJ.
  *	It'd be nice to have TAB expand ImageJ class names and methods.
