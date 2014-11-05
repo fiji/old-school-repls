@@ -19,15 +19,13 @@ package BSH;
 */
 
 import bsh.EvalError;
-
-import ij.IJ;
-
 import bsh.Interpreter;
 
 import common.AbstractInterpreter;
 
+import ij.IJ;
+
 import java.io.ByteArrayOutputStream;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.OutputStream;
 import java.io.PrintStream;

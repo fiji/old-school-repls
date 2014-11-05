@@ -1,18 +1,18 @@
 package BSH;
 
 import bsh.EvalError;
+import bsh.Interpreter;
 
 import common.RefreshScripts;
-import java.io.File;
-import java.io.FileReader;
-import java.io.BufferedReader;
+
+import ij.IJ;
+
 import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.FileInputStream;
 import java.io.PrintStream;
-import bsh.Interpreter;
-import ij.IJ;
 
 public class Refresh_BSH_Scripts extends RefreshScripts {
 
