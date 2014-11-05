@@ -30,18 +30,15 @@ You may contact Albert Cardona at acardona at ini phys ethz ch.
 package common;
 
 import fiji.FijiTools;
-
 import ij.IJ;
 import ij.ImageJ;
 import ij.Macro;
 import ij.Menus;
-
 import ij.plugin.PlugIn;
 
 import java.awt.Menu;
 import java.awt.MenuBar;
 import java.awt.MenuItem;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
@@ -50,7 +47,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-
 import java.util.Arrays;
 
 /**

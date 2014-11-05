@@ -4,16 +4,17 @@
 
 package common;
 
-import java.util.Map;
-import java.util.Hashtable;
-import java.lang.reflect.Method;
+import bsh.Interpreter;
 import ij.IJ;
 
-import bsh.Interpreter;
+import java.lang.reflect.Method;
+import java.util.Hashtable;
+import java.util.Map;
+
 import org.mozilla.javascript.Context;
+import org.mozilla.javascript.ImporterTopLevel;
 import org.mozilla.javascript.Scriptable;
 import org.mozilla.javascript.ScriptableObject;
-import org.mozilla.javascript.ImporterTopLevel;
 import org.python.core.PyDictionary;
 import org.python.core.PySystemState;
 import org.python.util.PythonInterpreter;
