@@ -1,12 +1,14 @@
 package Clojure;
 
 import common.RefreshScripts;
+
+import ij.IJ;
+
 import java.io.File;
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.util.Map;
 import java.util.HashMap;
-import ij.IJ;
+import java.util.Map;
 
 public class Refresh_Clojure_Scripts extends RefreshScripts {
 

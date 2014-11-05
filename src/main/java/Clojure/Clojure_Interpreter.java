@@ -16,42 +16,30 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 You may contact Albert Cardona at acardona at ini phys ethz ch.
 */
-import ij.IJ;
-
+import clojure.lang.Compiler;
+import clojure.lang.LineNumberingPushbackReader;
+import clojure.lang.LispReader;
+import clojure.lang.Namespace;
 import clojure.lang.RT;
 import clojure.lang.Symbol;
-import clojure.lang.Namespace;
-import clojure.lang.Compiler;
-import clojure.lang.LispReader;
 import clojure.lang.Var;
-import clojure.lang.LineNumberingPushbackReader;
-
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.KeyListener;
-import java.awt.event.KeyEvent;
-import java.util.Collections;
-import java.util.ArrayList;
-import java.io.ByteArrayInputStream;
-import java.io.PipedWriter;
-import java.io.PipedReader;
-import java.io.PushbackReader;
-import java.io.IOException;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.io.PrintWriter;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.InputStream;
-import java.io.Reader;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Future;
-import java.util.Map;
-import java.util.HashMap;
 
 import common.AbstractInterpreter;
+
+import ij.IJ;
+
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.util.Map;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Clojure_Interpreter extends AbstractInterpreter {
 
