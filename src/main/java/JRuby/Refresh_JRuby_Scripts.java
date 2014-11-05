@@ -2,12 +2,16 @@
 
 package JRuby;
 
+import common.RefreshScripts;
+
 import ij.IJ;
 
-import common.RefreshScripts;
-import org.jruby.*;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintStream;
 
-import java.io.*;
+import org.jruby.Ruby;
 
 public class Refresh_JRuby_Scripts extends RefreshScripts {
 

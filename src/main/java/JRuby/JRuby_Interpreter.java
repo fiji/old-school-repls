@@ -1,13 +1,15 @@
 /* -*- mode: java; c-basic-offset: 8; indent-tabs-mode: t; tab-width: 8 -*- */
 package JRuby;
 
-import ij.IJ;
-import ij.plugin.PlugIn;
-import org.jruby.*;
-import java.io.PrintStream;
 import common.AbstractInterpreter;
+
+import ij.IJ;
 import ij.Menus;
+
 import java.io.File;
+import java.io.PrintStream;
+
+import org.jruby.Ruby;
 
 public class JRuby_Interpreter extends AbstractInterpreter {
 
