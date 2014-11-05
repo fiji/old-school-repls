@@ -10,17 +10,19 @@
 
 package emblcmci.scalainterp;
  
+import common.AbstractInterpreter;
+
+import ij.IJ;
+
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import ij.IJ;
-import common.AbstractInterpreter;
 import scala.Option;
+import scala.collection.JavaConversions;
 import scala.collection.immutable.List;
 import scala.tools.nsc.Settings;
 import scala.tools.nsc.interpreter.IMain;
-import scala.collection.JavaConversions;
 
 public class Scala_Interpreter extends AbstractInterpreter{
 

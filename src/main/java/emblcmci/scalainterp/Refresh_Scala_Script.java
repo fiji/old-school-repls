@@ -22,6 +22,8 @@
  */
 package emblcmci.scalainterp;
 
+import common.RefreshScripts;
+
 import ij.IJ;
 
 import java.io.BufferedInputStream;
@@ -36,8 +38,6 @@ import java.io.PrintWriter;
 import scala.collection.immutable.List;
 import scala.tools.nsc.Settings;
 import scala.tools.nsc.interpreter.IMain;
-
-import common.RefreshScripts;
 
 /**
  * @author miura
