@@ -91,18 +91,25 @@
 
 		<bsh.version>2.1.0</bsh.version>
 		<clojure.version>1.8.0</clojure.version>
+		<js.version>1.7R2</js.version>
 		<jruby.version>9.1.17.0</jruby.version>
 		<jruby-core.version>${jruby.version}</jruby-core.version>
 		<jruby-stdlib.version>${jruby.version}</jruby-stdlib.version>
 		<scala.version>2.13.13</scala.version>
 		<scala-compiler.version>${scala.version}</scala-compiler.version>
 		<scala-library.version>${scala.version}</scala-library.version>
+
+		<allowedDuplicateClasses>${scijava.allowedDuplicateClasses},com.github.difflib.*</allowedDuplicateClasses>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>scijava-common</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache-extras.beanshell</groupId>
@@ -113,6 +120,11 @@
 			<groupId>org.clojure</groupId>
 			<artifactId>clojure</artifactId>
 			<version>${clojure.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>rhino</groupId>
+			<artifactId>js</artifactId>
+			<version>${js.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jruby</groupId>
