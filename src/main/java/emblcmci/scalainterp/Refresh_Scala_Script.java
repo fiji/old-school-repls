@@ -1,25 +1,25 @@
-/** Refresh-Scala_Script.java
+/*-
+ * #%L
+ * Fiji distribution of ImageJ for the life sciences.
+ * %%
+ * Copyright (C) 2007 - 2024 Fiji developers.
+ * %%
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
  * 
- * ImageJ plugin for loading scala scripts in defined folder (Scripts)
- * under Fiji root. 
- * Loads scala script file (.scala file) and executes.
- *  
- * Kota Miura (miura@embl)
- * http://cmci.embl.de
- * Nov 13, 2012 -
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  * 
- * Sample Scala script
- * ----
-	import ij._
-	println ("Hello from external script :-)")
-	IJ.log("test ij")
-	IJ.log(IJ.getVersion())
-	val imp = IJ.openImage("http://imagej.nih.gov/ij/images/blobs.gif")
-	imp.show()
-	IJ.wait(2000)
-	imp.close()
- * 
+ * You should have received a copy of the GNU General Public
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>.
+ * #L%
  */
+
 package emblcmci.scalainterp;
 
 import common.RefreshScripts;
@@ -40,8 +40,24 @@ import scala.tools.nsc.Settings;
 import scala.tools.nsc.interpreter.IMain;
 
 /**
- * @author miura
+ * ImageJ plugin for loading scala scripts in defined folder (Scripts)
+ * under Fiji root. 
+ * Loads scala script file (.scala file) and executes.
  *
+ * Sample Scala script:
+ *
+ * {@code
+ * import ij._
+ * println ("Hello from external script :-)")
+ * IJ.log("test ij")
+ * IJ.log(IJ.getVersion())
+ * val imp = IJ.openImage("http://imagej.nih.gov/ij/images/blobs.gif")
+ * imp.show()
+ * IJ.wait(2000)
+ * imp.close()
+ * }
+ *
+ * @author Kota Miura
  */
 public class Refresh_Scala_Script extends RefreshScripts {
 

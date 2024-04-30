@@ -1,11 +1,23 @@
-/** Scala_Interpreter.java
+/*-
+ * #%L
+ * Fiji distribution of ImageJ for the life sciences.
+ * %%
+ * Copyright (C) 2007 - 2024 Fiji developers.
+ * %%
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
  * 
- * ImageJ/Fiji plugin for scala REPL,
- * extending AbstractInterpreter abstract class.
- *  
- * Kota Miura (miura@embl)
- * http://cmci.embl.de
- * Nov 12, 2012
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>.
+ * #L%
  */
 
 package emblcmci.scalainterp;
@@ -24,6 +36,12 @@ import scala.collection.immutable.List;
 import scala.tools.nsc.Settings;
 import scala.tools.nsc.interpreter.IMain;
 
+/**
+ * ImageJ/Fiji plugin for scala REPL,
+ * extending AbstractInterpreter abstract class.
+ *  
+ * @author Kota Miura
+ */
 public class Scala_Interpreter extends AbstractInterpreter{
 
 	IMain imain = null;

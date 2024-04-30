@@ -1,31 +1,26 @@
 /* -*- mode: java; c-basic-offset: 8; indent-tabs-mode: t; tab-width: 8 -*- */
 
-/**
-A modified version of Albert Cardona's Refresh_Jython_List plugin,
-for subclassing to do the same for arbitrary languages and directories.
-
-This can now search the whole plugin tree to find scripts and insert
-them at the corresponding place in the "Plugins" menu hierarchy.
-
-------------------------------------------------------------------------
-
-Based on the Jython utility plugin for ImageJ(C).
-Copyright (C) 2005 Albert Cardona.
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt )
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-
-You may contact Albert Cardona at acardona at ini phys ethz ch.
-*/
+/*-
+ * #%L
+ * Fiji distribution of ImageJ for the life sciences.
+ * %%
+ * Copyright (C) 2007 - 2024 Fiji developers.
+ * %%
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>.
+ * #L%
+ */
 
 package common;
 
@@ -50,29 +45,37 @@ import java.io.OutputStream;
 import java.util.Arrays;
 
 /**
- *  This class looks through the plugins directory for files with a
- *  particular extension (e.g. ".rb" for JRuby, ".py" for Jython) and
- *  for each one that it finds:
- *
- *   - Makes sure that the submenu corresponding to the subdirectory
+ * A modified version of Albert Cardona's Refresh_Jython_List plugin,
+ * for subclassing to do the same for arbitrary languages and directories.
+ * <p>
+ * This can now search the whole plugin tree to find scripts and insert
+ * them at the corresponding place in the "Plugins" menu hierarchy.
+ * </p>
+ * <p>
+ * This class looks through the plugins directory for files with a
+ * particular extension (e.g. ".rb" for JRuby, ".py" for Jython) and
+ * for each one that it finds:
+ * <ul>
+ * <li>Makes sure that the submenu corresponding to the subdirectory
  *     containing that file exists, creating submenus if necessary.
+ * </li>
+ * <li>Removes any existing script with that filename from the submenu.
  *
- *   - Removes any existing script with that filename from the submenu.
- *
- *   - Adds the plugin as a handler for the action of clicking on that
+ * <li>Adds the plugin as a handler for the action of clicking on that
  *     menu item.  (The plugin will the run the script if runScript is
  *     implemented correctly.)
- *
- *  Note that this does not currently notice that you have removed
- *  scripts from the plugins directory; it will leave stale menu
- *  entries for those scripts.
- *
- *  --------------------------------------------------------------------
- *
- * 	To create a shortcut to a Jython plugin a macro can be done to
- * 	pass appropriate arguments to the Launch_Python_Script class,
- * 	or tweak ImageJ, or a thousand not-so-straighforward ways.
- *
+ * </li>
+ * </ul>
+ * <p>
+ * Note that this does not currently notice that you have removed
+ * scripts from the plugins directory; it will leave stale menu
+ * entries for those scripts.
+ * </p>
+ * <p>
+ * To create a shortcut to a Jython plugin a macro can be done to
+ * pass appropriate arguments to the Launch_Python_Script class,
+ * or tweak ImageJ, or a thousand not-so-straighforward ways.
+ * </p>
  */
 abstract public class RefreshScripts implements PlugIn {
 	public static final String magicMenuPrefix = "Plugins>Scripts>";
