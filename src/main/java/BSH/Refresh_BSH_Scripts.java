@@ -74,8 +74,6 @@ public class Refresh_BSH_Scripts extends RefreshScripts {
 			interpreter.eval(new InputStreamReader(istream),
 				interpreter.getNameSpace(), sourceFileName);
 		} catch (Throwable error) {
-			if (error instanceof EvalError)
-				((EvalError)error).setMessage(error.toString());
 			printError(error);
 		}
 	}
