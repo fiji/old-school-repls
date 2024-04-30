@@ -1036,6 +1036,13 @@ public abstract class AbstractInterpreter implements PlugIn {
 					reverse.put(className, packageName);
 			}
 		}
+		List<String> ijPluginClassList = defaultImports.get("ij.plugin");
+		if (ijPluginClassList != null) {
+			// Remove problematic ImageJ classes that cause NoClassDefFoundError:
+			// com/apple/eawt/ApplicationListener on non-Mac systems.
+			ijPluginClassList.remove("MacAdapter");
+			ijPluginClassList.remove("MacAdapter9");
+		}
 		return defaultImports;
 	}
 }
