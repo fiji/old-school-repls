@@ -52,11 +52,6 @@
 			<roles><role>founder</role></roles>
 			<properties><id>acardona</id></properties>
 		</contributor>
-		<contributor>
-			<name>Kota Miura</name>
-			<url>https://imagej.net/people/miura</url>
-			<properties><id>miura</id></properties>
-		</contributor>
 	</contributors>
 
 	<mailingLists>
@@ -95,9 +90,6 @@
 		<jruby.version>9.1.17.0</jruby.version>
 		<jruby-core.version>${jruby.version}</jruby-core.version>
 		<jruby-stdlib.version>${jruby.version}</jruby-stdlib.version>
-		<scala.version>2.13.13</scala.version>
-		<scala-compiler.version>${scala.version}</scala-compiler.version>
-		<scala-library.version>${scala.version}</scala-library.version>
 
 		<allowedDuplicateClasses>${scijava.allowedDuplicateClasses},com.github.difflib.*</allowedDuplicateClasses>
 	</properties>
@@ -139,16 +131,6 @@
 		<dependency>
 			<groupId>org.python</groupId>
 			<artifactId>jython-slim</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.scala-lang</groupId>
-			<artifactId>scala-compiler</artifactId>
-			<version>${scala-compiler.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.scala-lang</groupId>
-			<artifactId>scala-library</artifactId>
-			<version>${scala-library.version}</version>
 		</dependency>
 	</dependencies>
 
